@@ -78,7 +78,7 @@ const crew: CrewMember[] = [
   },
   {
     name: "Orel Alia",
-    role: "Adi's Boyfriend",
+    role: "In-Law to be BH",
     image: "/crew/orel.jpg",
   },
   {
