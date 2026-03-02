@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0a1628;
+  --color-deep-blue: #0f2847;
+  --color-ocean: #1565c0;
+  --color-aqua: #00bcd4;
+  --color-teal: #0097a7;
+  --color-gold: #f0c27a;
+  --color-sand: #e8d5b7;
+  --color-foam: #e0f7fa;
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-outfit);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #0a1628;
+    color: #ffffff;
+    font-family: var(--font-outfit), sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a1628;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1565c0;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00bcd4;
+  }
+}
+
+@layer components {
+  /* Wave animation */
+  .wave-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave-svg {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+
+  .wave-path-1 { animation: wave1 8s ease-in-out infinite; }
+  .wave-path-2 { animation: wave2 6s ease-in-out infinite; }
+  .wave-path-3 { animation: wave3 10s ease-in-out infinite; }
+
+  /* Flip clock animation */
+  .flip-card { perspective: 400px; }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-inner.flipping {
+    animation: flipDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Gradient mesh backgrounds */
+  .mesh-gradient-1 {
+    background:
+      radial-gradient(ellipse at 10% 20%, rgba(21, 101, 192, 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(0, 188, 212, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(15, 40, 71, 0.8) 0%, transparent 70%),
+      linear-gradient(180deg, #0a1628 0%, #0f2847 100%);
+  }
+
+  .mesh-gradient-2 {
+    background:
+      radial-gradient(ellipse at 90% 10%, rgba(0, 151, 167, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 80%, rgba(240, 194, 122, 0.2) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 40%, rgba(21, 101, 192, 0.3) 0%, transparent 60%),
+      linear-gradient(180deg, #0f2847 0%, #0a1628 100%);
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(10, 22, 40, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 188, 212, 0.15);
+  }
+
+  .glass-card {
+    background: rgba(15, 40, 71, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 188, 212, 0.1);
+  }
+
+  /* Glow text */
+  .glow-text {
+    text-shadow: 0 0 40px rgba(0, 188, 212, 0.3), 0 0 80px rgba(0, 188, 212, 0.1);
+  }
+
+  /* Ocean shimmer */
+  .ocean-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 188, 212, 0.08) 25%,
+      rgba(21, 101, 192, 0.12) 50%,
+      rgba(0, 188, 212, 0.08) 75%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 4s ease-in-out infinite;
+  }
+
+  .floating { animation: float 3s ease-in-out infinite; }
+
+  .pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+}
+
+@keyframes wave1 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-25px); }
+}
+@keyframes wave2 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(25px); }
+}
+@keyframes wave3 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-15px); }
+}
+@keyframes flipDown {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0deg); }
+}
+@keyframes shimmer {
+  0%, 100% { background-position: -200% 0; }
+  50% { background-position: 200% 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 188, 212, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(0, 188, 212, 0.4); }
+}
