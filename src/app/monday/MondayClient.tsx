@@ -68,7 +68,7 @@ export default function MondayClient() {
       <section className="mesh-gradient-1">
         <DayNavigation
           prevDay={{ label: "Sunday — Day at Sea", href: "/sunday" }}
-          nextDay={{ label: "Meet the Crew", href: "/crew" }}
+          nextDay={{ label: "Meet the Crew", href: "/crew", tag: "The Legends" }}
         />
       </section>
     </>

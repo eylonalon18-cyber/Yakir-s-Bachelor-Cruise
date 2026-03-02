@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 interface DayNavigationProps {
   prevDay?: { label: string; href: string };
-  nextDay?: { label: string; href: string };
+  nextDay?: { label: string; href: string; tag?: string };
 }
 
 export default function DayNavigation({ prevDay, nextDay }: DayNavigationProps) {
@@ -52,7 +52,7 @@ export default function DayNavigation({ prevDay, nextDay }: DayNavigationProps) 
         >
           <div className="text-right">
             <span className="block text-xs text-white/40 uppercase tracking-wider">
-              Next Day
+              {nextDay.tag || "Next Day"}
             </span>
             <span className="block text-sm sm:text-base font-semibold text-white group-hover:text-aqua transition-colors">
               {nextDay.label}
