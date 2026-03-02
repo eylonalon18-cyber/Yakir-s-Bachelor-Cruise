@@ -88,9 +88,9 @@ const crew: CrewMember[] = [
   },
   {
     name: "Justin Prechodko",
-    role: "Game Time Decision",
+    role: "Groomsman",
     image: "/crew/justin-p.jpg",
-    note: "TBD",
+    note: "GTD / TBD",
   },
 ];
 
