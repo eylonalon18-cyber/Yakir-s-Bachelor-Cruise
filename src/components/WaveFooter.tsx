@@ -29,7 +29,7 @@ export default function WaveFooter() {
       </div>
       <div className="bg-navy/80 py-6 text-center">
         <p className="text-white/40 text-sm font-[family-name:var(--font-outfit)]">
-          The Final Voyage &bull; Yakir&apos;s Bachelor Cruise &bull; August 2026
+          Yakir's Bachelor Cruise &bull; Yakir&apos;s Bachelor Cruise &bull; August 2026
         </p>
       </div>
     </footer>

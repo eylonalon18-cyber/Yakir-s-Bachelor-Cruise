@@ -135,7 +135,7 @@ export default function Home() {
               className="font-[family-name:var(--font-playfair)] text-4xl sm:text-6xl md:text-7xl
                 font-bold text-white glow-text mb-6 leading-[1.1]"
             >
-              The Final Voyage
+              Yakir's Bachelor Cruise
             </motion.h1>
 
             <motion.p

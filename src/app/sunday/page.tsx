@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SundayClient from "./SundayClient";
 
 export const metadata: Metadata = {
-  title: "Day 4 — Cruising | The Final Voyage",
+  title: "Day 4 — Cruising | Yakir's Bachelor Cruise",
   description: "Sunday, August 16 • Day at Sea — Sports, pool, casino, and full send on the ship.",
 };
 

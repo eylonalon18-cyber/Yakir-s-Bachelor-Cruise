@@ -144,7 +144,7 @@ export default function CrewClient() {
             The Crew
           </h1>
           <p className="text-white/50 text-base sm:text-lg max-w-md mx-auto">
-            The brotherhood setting sail on The Final Voyage
+            The brotherhood setting sail on Yakir's Bachelor Cruise
           </p>
         </motion.div>
       </section>

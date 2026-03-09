@@ -65,7 +65,7 @@ export default function Header() {
               className="font-[family-name:var(--font-playfair)] text-lg sm:text-xl font-bold
               bg-gradient-to-r from-aqua via-white to-gold bg-clip-text text-transparent"
             >
-              The Final Voyage
+              Yakir's Bachelor Cruise
             </span>
           </Link>
 

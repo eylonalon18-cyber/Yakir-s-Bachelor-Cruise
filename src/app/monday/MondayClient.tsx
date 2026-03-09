@@ -45,9 +45,9 @@ export default function MondayClient() {
                 🤫
               </motion.span>
               <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-                What Happens on The Final Voyage
+                What Happens on Yakir's Bachelor Cruise
                 <br />
-                <span className="text-aqua">Stays on The Final Voyage</span>
+                <span className="text-aqua">Stays on Yakir's Bachelor Cruise</span>
               </h2>
               <p className="text-white/50 text-base sm:text-lg max-w-md mx-auto mb-6">
                 Yakir, this one&apos;s for you. The last ride before the ring goes on.
