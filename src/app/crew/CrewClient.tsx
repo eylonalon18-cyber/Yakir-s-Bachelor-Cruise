@@ -11,6 +11,7 @@ interface CrewMember {
   image: string;
   highlight?: "gold" | "aqua";
   note?: string;
+  imagePosition?: string;
 }
 
 const crew: CrewMember[] = [
@@ -50,6 +51,7 @@ const crew: CrewMember[] = [
     name: "Jake Marcus",
     role: "Groomsman",
     image: "/crew/jake.jpg",
+    imagePosition: "center 20%",
   },
   {
     name: "Jett Cohen",
@@ -60,6 +62,7 @@ const crew: CrewMember[] = [
     name: "Justin Adler",
     role: "Groomsman",
     image: "/crew/justin-a.jpg",
+    imagePosition: "60% 15%",
   },
   {
     name: "Len Asari",
@@ -80,6 +83,7 @@ const crew: CrewMember[] = [
     name: "Orel Alia",
     role: "In-Law to Be BH",
     image: "/crew/orel.jpg",
+    imagePosition: "center 30%",
   },
   {
     name: "Tyler Esposito",
@@ -246,6 +250,7 @@ export default function CrewClient() {
                     alt={member.name}
                     fill
                     className="object-cover"
+                    style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = "none";
                     }}
