@@ -46,7 +46,7 @@ const crew: CrewMember[] = [
     name: "Dean Kenny",
     role: "Groomsman",
     image: "/crew/dean.jpg",
-    imagePosition: "center 5%",
+    imagePosition: "center 25%",
   },
   {
     name: "Jake Marcus",
@@ -63,7 +63,7 @@ const crew: CrewMember[] = [
     name: "Justin Adler",
     role: "Groomsman",
     image: "/crew/justin-a.jpg",
-    imagePosition: "40% 10%",
+    imagePosition: "center 15%",
   },
   {
     name: "Len Asari",
