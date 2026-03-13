@@ -12,7 +12,6 @@ interface CrewMember {
   highlight?: "gold" | "aqua";
   note?: string;
   imagePosition?: string;
-  imageContain?: boolean;
 }
 
 const crew: CrewMember[] = [
@@ -47,7 +46,7 @@ const crew: CrewMember[] = [
     name: "Dean Kenny",
     role: "Groomsman",
     image: "/crew/dean.jpg",
-    imageContain: true,
+    imagePosition: "center 5%",
   },
   {
     name: "Jake Marcus",
@@ -64,7 +63,7 @@ const crew: CrewMember[] = [
     name: "Justin Adler",
     role: "Groomsman",
     image: "/crew/justin-a.jpg",
-    imagePosition: "55% 0%",
+    imagePosition: "40% 10%",
   },
   {
     name: "Len Asari",
@@ -85,8 +84,7 @@ const crew: CrewMember[] = [
     name: "Orel Alia",
     role: "In-Law to Be BH",
     image: "/crew/orel.jpg",
-    imagePosition: "center 10%",
-    imageContain: true,
+    imagePosition: "center 15%",
   },
   {
     name: "Tyler Esposito",
@@ -252,7 +250,7 @@ export default function CrewClient() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className={member.imageContain ? "object-contain" : "object-cover"}
+                    className="object-cover"
                     style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = "none";
