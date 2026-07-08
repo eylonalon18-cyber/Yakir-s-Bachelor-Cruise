@@ -111,7 +111,7 @@ export default function Home() {
         {/* Hero content */}
         <motion.div
           style={{ opacity: heroOpacity }}
-          className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 pt-16"
+          className="relative z-10 h-full flex flex-col items-center justify-start text-center px-4 pt-20 sm:pt-24"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
