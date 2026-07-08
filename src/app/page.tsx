@@ -215,7 +215,7 @@ export default function Home() {
               { emoji: "🚢", label: "Ship", value: "Freedom of the Seas" },
               { emoji: "📍", label: "Departing", value: "Miami, Florida" },
               { emoji: "🗓️", label: "Dates", value: "Aug 13–17, 2026" },
-              { emoji: "👥", label: "Crew", value: "13–16 Legends" },
+              { emoji: "👥", label: "Crew", value: "16 Legends" },
             ].map((item, i) => (
               <motion.div
                 key={item.label}
