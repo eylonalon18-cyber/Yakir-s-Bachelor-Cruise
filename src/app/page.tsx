@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CountdownTimer from "@/components/CountdownTimer";
 import SectionWave from "@/components/SectionWave";
+import AppReminderModal from "@/components/AppReminderModal";
 import {
   AnchorDecoration,
   CompassDecoration,
@@ -89,6 +90,8 @@ export default function Home() {
 
   return (
     <>
+      <AppReminderModal />
+
       {/* HERO */}
       <section ref={heroRef} className="relative h-screen min-h-[700px] overflow-hidden">
         <StarField />
