@@ -8,6 +8,7 @@ export interface TimelineEvent {
   location?: string;
   icon: string;
   deck?: string;
+  note?: string;
 }
 
 function getIconForActivity(icon: string) {
@@ -30,6 +31,10 @@ function getIconForActivity(icon: string) {
     tbd: "🤙",
     ship: "🚢",
     bars: "🍹",
+    volleyball: "🏐",
+    flowrider: "🏄",
+    shabbat: "🕯️",
+    basketball: "🏀",
   };
   return icons[icon] || "📍";
 }
@@ -82,6 +87,11 @@ export default function Timeline({ events }: { events: TimelineEvent[] }) {
             {/* Location */}
             {event.location && (
               <p className="text-sm text-white/50 mt-1">{event.location}</p>
+            )}
+
+            {/* Note (dress code, TBD details, etc.) */}
+            {event.note && (
+              <p className="text-xs text-gold/60 mt-1.5 italic">{event.note}</p>
             )}
           </motion.div>
         </motion.div>
