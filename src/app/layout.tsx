@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -36,7 +37,14 @@ export default function RootLayout({
         <OceanParticles />
         <Header />
         <main className="relative z-10">{children}</main>
-        <footer className="relative z-10 border-t border-white/10 py-4 text-center">
+        <footer className="relative z-10 border-t border-white/10 py-6 text-center">
+          <Image
+            src="/logo.png"
+            alt="Yakir's Bachelor Trip logo"
+            width={60}
+            height={64}
+            className="w-14 h-auto mx-auto mb-3 opacity-80"
+          />
           <p className="text-white/40 text-sm">
             Royal Caribbean &bull; Yakir&apos;s Bachelor Cruise &bull; August 2026
           </p>

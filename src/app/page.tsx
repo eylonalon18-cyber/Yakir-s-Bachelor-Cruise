@@ -118,6 +118,21 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.9, ease: "easeOut" }}
+              className="flex justify-center mb-6"
+            >
+              <Image
+                src="/logo.png"
+                alt="Yakir's Bachelor Trip logo"
+                width={240}
+                height={254}
+                priority
+                className="w-36 sm:w-48 md:w-56 h-auto drop-shadow-2xl"
+              />
+            </motion.div>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

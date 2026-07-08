@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -25,42 +26,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="text-aqua transition-transform group-hover:rotate-12"
-            >
-              <path
-                d="M3 17h1l1-2h2l1 2h1l1-2h2l1 2h1l1-2h2l1 2h1"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M5 14l1-3h2l1 3"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M10 14V8l2-2 2 2v6"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M15 14l1-3h2l1 3"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <Image
+              src="/logo.png"
+              alt="Yakir's Bachelor Trip logo"
+              width={40}
+              height={42}
+              priority
+              className="w-9 h-9 sm:w-10 sm:h-10 object-contain transition-transform group-hover:rotate-12"
+            />
             <span
               className="font-[family-name:var(--font-playfair)] text-lg sm:text-xl font-bold
               bg-gradient-to-r from-aqua via-white to-gold bg-clip-text text-transparent"
