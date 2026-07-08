@@ -2,6 +2,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import Timeline from "@/components/Timeline";
+import DinnerThemeBanner from "@/components/DinnerThemeBanner";
 import DayNavigation from "@/components/DayNavigation";
 import SectionWave from "@/components/SectionWave";
 import { ShipWheelDecoration, CompassDecoration, CocktailDecoration, BeerDecoration, FishSchool, ShellDecoration, StarField } from "@/components/Decorations";
@@ -28,6 +29,7 @@ export default function SundayClient() {
         <ShellDecoration className="absolute bottom-16 right-10 hidden lg:block" size={80} />
         <SectionWave flip />
         <div className="relative z-10">
+          <DinnerThemeBanner theme="TBD" />
           <Timeline events={sundayEvents} />
         </div>
         <SectionWave />

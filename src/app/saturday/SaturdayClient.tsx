@@ -2,6 +2,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import Timeline from "@/components/Timeline";
+import DinnerThemeBanner from "@/components/DinnerThemeBanner";
 import DayNavigation from "@/components/DayNavigation";
 import SectionWave from "@/components/SectionWave";
 import { PalmTreeDecoration, AnchorDecoration, BeerDecoration, FishDecoration, WavesDecoration, StarField } from "@/components/Decorations";
@@ -27,6 +28,7 @@ export default function SaturdayClient() {
         <WavesDecoration className="absolute bottom-20 right-10 hidden lg:block" size={140} />
         <SectionWave flip />
         <div className="relative z-10">
+          <DinnerThemeBanner theme="TBD" />
           <Timeline events={saturdayEvents} />
         </div>
         <SectionWave />
