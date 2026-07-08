@@ -12,6 +12,8 @@ interface CrewMember {
   highlight?: "gold" | "aqua";
   note?: string;
   imagePosition?: string;
+  reservation?: string;
+  room?: string;
 }
 
 const crew: CrewMember[] = [
@@ -20,86 +22,118 @@ const crew: CrewMember[] = [
     role: "The Groom",
     image: "/crew/yakir.jpg",
     highlight: "gold",
+    reservation: "3326279",
+    room: "9397",
   },
   {
     name: "Alon Eylon",
     role: "Brother / Best Man",
     image: "/crew/alon.jpg",
     highlight: "aqua",
+    reservation: "3325330",
+    room: "9399",
   },
   {
     name: "Yaron Eylon",
     role: "Groomsman",
     image: "/crew/yaron.jpg",
+    reservation: "3326279",
+    room: "9397",
   },
   {
     name: "Ari Nahum",
     role: "Groomsman",
     image: "/crew/ari.jpg",
+    reservation: "3317035",
+    room: "9393",
   },
   {
     name: "Cade Zaris",
     role: "Groomsman",
     image: "/crew/cade.jpg",
+    reservation: "3310626",
+    room: "9385",
   },
   {
     name: "Dean Kenny",
     role: "Groomsman",
     image: "/crew/dean.jpg",
     imagePosition: "center 25%",
+    reservation: "3319946",
+    room: "9395",
   },
   {
     name: "Jake Marcus",
     role: "Groomsman",
     image: "/crew/jake.jpg",
     imagePosition: "center 20%",
+    reservation: "3310659",
+    room: "9387",
   },
   {
     name: "Jett Cohen",
     role: "Groomsman",
     image: "/crew/jett.jpg",
+    reservation: "3310851",
+    room: "9389",
   },
   {
     name: "Justin Adler",
     role: "Groomsman",
     image: "/crew/justin-a.jpg",
     imagePosition: "center 15%",
+    reservation: "3310626",
+    room: "9385",
   },
   {
     name: "Len Asari",
     role: "Groomsman",
     image: "/crew/len.jpg",
+    reservation: "3316778",
+    room: "9391",
   },
   {
     name: "Matt Petcove",
     role: "Groomsman",
     image: "/crew/matt.jpg",
+    reservation: "3310659",
+    room: "9387",
   },
   {
     name: "Nhat Tran",
     role: "Groomsman",
     image: "/crew/nhat.jpg",
+    reservation: "3310851",
+    room: "9389",
   },
   {
     name: "Samnit Gill",
     role: "Groomsman",
     image: "/crew/samnit.jpg",
+    reservation: "3319946",
+    room: "9395",
   },
   {
     name: "Orel Alia",
     role: "In-Law to Be BH",
     image: "/crew/orel.jpg",
     imagePosition: "center 15%",
+    reservation: "3325330",
+    room: "9399",
   },
   {
     name: "Tyler Esposito",
     role: "Groomsman",
     image: "/crew/tyler.jpg",
+    reservation: "3317035",
+    room: "9393",
   },
   {
     name: "Justin Prechodko",
     role: "Groomsman",
     image: "/crew/justin-p.jpg",
+    reservation: "3316778",
+    room: "9391",
   },
 ];
 
@@ -127,6 +161,16 @@ function getRoleClass(highlight?: "gold" | "aqua") {
   if (highlight === "gold") return "text-gold";
   if (highlight === "aqua") return "text-aqua";
   return "text-aqua/70";
+}
+
+function ReservationInfo({ member }: { member: CrewMember }) {
+  if (!member.reservation && !member.room) return null;
+  return (
+    <span className="block text-[11px] sm:text-xs text-gold/70 mt-2 tracking-wide">
+      Res #{member.reservation}
+      {member.room && <span className="text-white/40"> · Room {member.room}</span>}
+    </span>
+  );
 }
 
 export default function CrewClient() {
@@ -199,6 +243,7 @@ export default function CrewClient() {
               <span className="text-gold font-semibold text-sm uppercase tracking-widest">
                 👑 {crew[0].role}
               </span>
+              <ReservationInfo member={crew[0]} />
             </div>
           </motion.div>
 
@@ -231,6 +276,7 @@ export default function CrewClient() {
               <span className="text-aqua font-semibold text-sm uppercase tracking-widest">
                 {crew[1].role}
               </span>
+              <ReservationInfo member={crew[1]} />
             </div>
           </motion.div>
 
@@ -271,6 +317,7 @@ export default function CrewClient() {
                 {member.note && (
                   <span className="block text-xs text-white/30 mt-1 italic">{member.note}</span>
                 )}
+                <ReservationInfo member={member} />
               </motion.div>
             ))}
           </div>
