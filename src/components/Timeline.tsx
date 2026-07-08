@@ -68,16 +68,11 @@ export default function Timeline({ events }: { events: TimelineEvent[] }) {
             transition={{ type: "spring", stiffness: 300 }}
             className="relative z-10 glass-card rounded-2xl p-5 sm:p-6 group hover:border-aqua/30 transition-all duration-300 text-center"
           >
-            {/* Time & deck badges */}
-            <div className="flex items-center justify-center gap-2 mb-3 flex-wrap">
+            {/* Time badge */}
+            <div className="flex items-center justify-center mb-3">
               <span className="text-xs font-semibold text-aqua bg-aqua/10 px-3 py-1 rounded-full border border-aqua/15">
                 {event.time}
               </span>
-              {event.deck && (
-                <span className="text-xs font-medium text-gold/80 bg-gold/10 px-3 py-1 rounded-full border border-gold/15">
-                  {event.deck}
-                </span>
-              )}
             </div>
 
             {/* Icon */}
@@ -90,9 +85,18 @@ export default function Timeline({ events }: { events: TimelineEvent[] }) {
               {event.activity}
             </h3>
 
-            {/* Location */}
-            {event.location && (
-              <p className="text-sm text-white/50 mt-1">{event.location}</p>
+            {/* Location + deck, with pin */}
+            {(event.location || event.deck) && (
+              <p className="text-sm text-white/50 mt-1.5 flex items-center justify-center gap-1.5 flex-wrap">
+                <span aria-hidden className="text-aqua/80">📍</span>
+                {event.location && <span>{event.location}</span>}
+                {event.location && event.deck && (
+                  <span className="text-white/25">·</span>
+                )}
+                {event.deck && (
+                  <span className="text-gold/80 font-medium">{event.deck}</span>
+                )}
+              </p>
             )}
 
             {/* Note (dress code, TBD details, etc.) */}
