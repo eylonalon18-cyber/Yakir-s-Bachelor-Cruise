@@ -20,6 +20,13 @@ export const thursdayEvents: TimelineEvent[] = [
     icon: "depart",
   },
   {
+    time: "7:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
+    icon: "casino",
+    deck: "Deck 4",
+  },
+  {
     time: "8:30 PM",
     activity: "Group Dinner",
     location: "Main Dining Room",
@@ -27,9 +34,9 @@ export const thursdayEvents: TimelineEvent[] = [
     note: "Casual — no set theme • Deck & table TBD",
   },
   {
-    time: "9:30–10:45 PM",
+    time: "9:45 PM",
     activity: "Casino + Bar",
-    location: "",
+    location: "Casino Royale",
     icon: "casino",
     deck: "Deck 4",
   },
@@ -127,6 +134,13 @@ export const fridayEvents: TimelineEvent[] = [
     note: "White Night 🤍 • Deck & table TBD",
   },
   {
+    time: "9:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
+    icon: "casino",
+    deck: "Deck 4",
+  },
+  {
     time: "11:00 PM–1:00 AM",
     activity: "The Nightclub Experience",
     location: "Studio B",
@@ -170,6 +184,13 @@ export const saturdayEvents: TimelineEvent[] = [
     icon: "ship",
   },
   {
+    time: "7:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
+    icon: "casino",
+    deck: "Deck 4",
+  },
+  {
     time: "8:15 PM",
     activity: "Group Dinner",
     location: "Main Dining Hall",
@@ -177,9 +198,9 @@ export const saturdayEvents: TimelineEvent[] = [
     deck: "Deck 4",
   },
   {
-    time: "10:00 PM",
-    activity: "Casino Royale & Drinks",
-    location: "",
+    time: "9:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
     icon: "casino",
     deck: "Deck 4",
   },
@@ -221,6 +242,13 @@ export const sundayEvents: TimelineEvent[] = [
     icon: "sports",
   },
   {
+    time: "7:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
+    icon: "casino",
+    deck: "Deck 4",
+  },
+  {
     time: "8:15 PM",
     activity: "Group Dinner",
     location: "Main Dining Hall",
@@ -228,9 +256,9 @@ export const sundayEvents: TimelineEvent[] = [
     deck: "Deck 4",
   },
   {
-    time: "10:00 PM",
-    activity: "Casino Royale & Drinks",
-    location: "",
+    time: "9:45 PM",
+    activity: "Casino + Bar",
+    location: "Casino Royale",
     icon: "casino",
     deck: "Deck 4",
   },
