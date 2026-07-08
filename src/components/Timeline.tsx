@@ -35,6 +35,8 @@ function getIconForActivity(icon: string) {
     flowrider: "🏄",
     shabbat: "🕯️",
     basketball: "🏀",
+    abs: "🏋️",
+    tequila: "🥃",
   };
   return icons[icon] || "📍";
 }

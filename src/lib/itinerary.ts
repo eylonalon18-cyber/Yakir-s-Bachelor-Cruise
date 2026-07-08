@@ -58,6 +58,14 @@ export const thursdayEvents: TimelineEvent[] = [
 
 export const fridayEvents: TimelineEvent[] = [
   {
+    time: "7:00 AM",
+    activity: "Fab Abs Class",
+    location: "Vitality Spa",
+    icon: "abs",
+    deck: "Deck 11",
+    note: "30 min",
+  },
+  {
     time: "8:00 AM or earlier",
     activity: "Gym Session",
     location: "Vitality Spa",
@@ -158,14 +166,22 @@ export const fridayEvents: TimelineEvent[] = [
 
 export const saturdayEvents: TimelineEvent[] = [
   {
-    time: "8:00 AM",
+    time: "7:00 AM",
+    activity: "Fab Abs Class",
+    location: "Vitality Spa",
+    icon: "abs",
+    deck: "Deck 11",
+    note: "30 min",
+  },
+  {
+    time: "8:00 AM or earlier",
     activity: "Gym Session",
     location: "Vitality Spa",
     icon: "gym",
     deck: "Deck 11",
   },
   {
-    time: "9:30 AM",
+    time: "9:15 AM",
     activity: "Breakfast",
     location: "Windjammer",
     icon: "breakfast",
@@ -173,15 +189,37 @@ export const saturdayEvents: TimelineEvent[] = [
   },
   {
     time: "Daytime",
-    activity: "Bimini — TBD",
+    activity: "Bimini",
     location: "On the island",
-    icon: "tbd",
+    icon: "island",
+    note: "Gangway opens 8:30 AM • All aboard by 4:30 PM",
   },
   {
-    time: "5:00 PM",
-    activity: "Back on Ship",
+    time: "4:30 PM",
+    activity: "Ship Leaves Bimini",
     location: "",
-    icon: "ship",
+    icon: "depart",
+  },
+  {
+    time: "4:45 PM",
+    activity: "Basketball Free-Throw Competition",
+    location: "Sports Court",
+    icon: "basketball",
+    deck: "Deck 13",
+  },
+  {
+    time: "7:00–7:30 PM",
+    activity: "60 Seconds or Less Game Show",
+    location: "Star Lounge",
+    icon: "show",
+    deck: "Deck 5",
+  },
+  {
+    time: "7:30 PM",
+    activity: "Tequila Tasting",
+    location: "Port Merchants",
+    icon: "tequila",
+    deck: "Deck 5",
   },
   {
     time: "7:45 PM",
@@ -193,9 +231,9 @@ export const saturdayEvents: TimelineEvent[] = [
   {
     time: "8:15 PM",
     activity: "Group Dinner",
-    location: "Main Dining Hall",
+    location: "Main Dining Room",
     icon: "dinner",
-    deck: "Deck 4",
+    note: "White Night • Deck & table TBD",
   },
   {
     time: "9:45 PM",
@@ -205,14 +243,14 @@ export const saturdayEvents: TimelineEvent[] = [
     deck: "Deck 4",
   },
   {
-    time: "12:00 AM",
-    activity: "Studio B Party",
-    location: "",
+    time: "11:30 PM–1:30 AM",
+    activity: "Olive or Twist Nightclub",
+    location: "Resident DJ",
     icon: "party",
-    deck: "Deck 3",
+    deck: "Deck 14",
   },
   {
-    time: "2:00 AM",
+    time: "1:30 AM",
     activity: "Sorrento's Pizza",
     location: "",
     icon: "pizza",
@@ -222,7 +260,15 @@ export const saturdayEvents: TimelineEvent[] = [
 
 export const sundayEvents: TimelineEvent[] = [
   {
-    time: "8:00 AM",
+    time: "7:00 AM",
+    activity: "Fab Abs Class",
+    location: "Vitality Spa",
+    icon: "abs",
+    deck: "Deck 11",
+    note: "30 min",
+  },
+  {
+    time: "8:00 AM or earlier",
     activity: "Gym Session",
     location: "Vitality Spa",
     icon: "gym",
