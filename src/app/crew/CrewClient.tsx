@@ -81,6 +81,11 @@ const crew: CrewMember[] = [
     image: "/crew/nhat.jpg",
   },
   {
+    name: "Samnit Gill",
+    role: "Groomsman",
+    image: "/crew/samnit.jpg",
+  },
+  {
     name: "Orel Alia",
     role: "In-Law to Be BH",
     image: "/crew/orel.jpg",
@@ -95,7 +100,6 @@ const crew: CrewMember[] = [
     name: "Justin Prechodko",
     role: "Groomsman",
     image: "/crew/justin-p.jpg",
-    note: "GTD / TBD",
   },
 ];
 
@@ -143,7 +147,7 @@ export default function CrewClient() {
             className="inline-block text-aqua text-sm font-semibold tracking-widest uppercase mb-4
               bg-aqua/10 px-4 py-1.5 rounded-full border border-aqua/20"
           >
-            15 Legends
+            16 Legends
           </motion.span>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl font-bold text-white glow-text mb-4">
             The Crew
