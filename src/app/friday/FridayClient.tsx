@@ -29,7 +29,7 @@ export default function FridayClient() {
         <PalmTreeDecoration className="absolute bottom-16 right-6 hidden lg:block" size={100} />
         <SectionWave flip />
         <div className="relative z-10">
-          <DinnerThemeBanner theme="White Night 🤍" />
+          <DinnerThemeBanner theme="White Night" />
           <Timeline events={fridayEvents} />
         </div>
         <SectionWave />

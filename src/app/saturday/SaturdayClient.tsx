@@ -28,7 +28,7 @@ export default function SaturdayClient() {
         <WavesDecoration className="absolute bottom-20 right-10 hidden lg:block" size={140} />
         <SectionWave flip />
         <div className="relative z-10">
-          <DinnerThemeBanner theme="TBD" />
+          <DinnerThemeBanner theme="White Night" />
           <Timeline events={saturdayEvents} />
         </div>
         <SectionWave />

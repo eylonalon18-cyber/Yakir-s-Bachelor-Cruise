@@ -131,7 +131,7 @@ export const fridayEvents: TimelineEvent[] = [
     activity: "Group Dinner",
     location: "Main Dining Room",
     icon: "dinner",
-    note: "White Night 🤍 • Deck & table TBD",
+    note: "White Night • Deck & table TBD",
   },
   {
     time: "9:45 PM",

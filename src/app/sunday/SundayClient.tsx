@@ -29,7 +29,7 @@ export default function SundayClient() {
         <ShellDecoration className="absolute bottom-16 right-10 hidden lg:block" size={80} />
         <SectionWave flip />
         <div className="relative z-10">
-          <DinnerThemeBanner theme="TBD" />
+          <DinnerThemeBanner theme="Dress Your Best" />
           <Timeline events={sundayEvents} />
         </div>
         <SectionWave />
