@@ -42,8 +42,8 @@ export const thursdayEvents: TimelineEvent[] = [
   },
   {
     time: "10:30 PM",
-    activity: "Olive or Twist Nightclub",
-    location: "Resident DJ",
+    activity: "Nightclub w/ Resident DJ",
+    location: "Olive or Twist",
     icon: "party",
     deck: "Deck 14",
   },
@@ -244,8 +244,8 @@ export const saturdayEvents: TimelineEvent[] = [
   },
   {
     time: "11:30 PM–1:30 AM",
-    activity: "Olive or Twist Nightclub",
-    location: "Resident DJ",
+    activity: "Nightclub w/ Resident DJ",
+    location: "Olive or Twist",
     icon: "party",
     deck: "Deck 14",
   },
@@ -378,8 +378,8 @@ export const sundayEvents: TimelineEvent[] = [
   },
   {
     time: "11:30 PM–1:30 AM",
-    activity: "Olive or Twist Nightclub",
-    location: "Resident DJ",
+    activity: "Nightclub w/ Resident DJ",
+    location: "Olive or Twist",
     icon: "party",
     deck: "Deck 14",
   },
