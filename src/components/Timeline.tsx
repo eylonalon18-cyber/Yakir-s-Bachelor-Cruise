@@ -37,6 +37,10 @@ function getIconForActivity(icon: string) {
     basketball: "🏀",
     abs: "🏋️",
     tequila: "🥃",
+    pickleball: "🏓",
+    splash: "💦",
+    dodgeball: "🤾",
+    comedy: "🎙️",
   };
   return icons[icon] || "📍";
 }
