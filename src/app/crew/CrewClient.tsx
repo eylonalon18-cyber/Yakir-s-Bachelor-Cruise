@@ -125,8 +125,8 @@ const crew: CrewMember[] = [
     room: "9395",
   },
   {
-    name: "Isaac",
-    role: "Groomsman",
+    name: "Isaac Hanina",
+    role: "Cousin",
     image: "/crew/isaac.jpg",
     reservation: "3326279",
     room: "9397",
@@ -141,7 +141,7 @@ const crew: CrewMember[] = [
   },
   {
     name: "Yaron Eylon",
-    role: "Groomsman",
+    role: "Brother / Groomsman",
     image: "/crew/yaron.jpg",
     reservation: "3325330",
     room: "9399",
