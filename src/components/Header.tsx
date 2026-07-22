@@ -13,6 +13,7 @@ const navItems = [
   { label: "Saturday", href: "/saturday" },
   { label: "Sunday", href: "/sunday" },
   { label: "Monday", href: "/monday" },
+  { label: "Dining", href: "/dining" },
   { label: "Crew", href: "/crew" },
 ];
 

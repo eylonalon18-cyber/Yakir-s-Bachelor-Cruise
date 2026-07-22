@@ -16,7 +16,10 @@ interface CrewMember {
   room?: string;
 }
 
+const GROUP_ID = "3280132";
+
 const crew: CrewMember[] = [
+  // Featured (kept up top, in this order)
   {
     name: "Yakir Eylon",
     role: "The Groom",
@@ -30,52 +33,16 @@ const crew: CrewMember[] = [
     role: "Brother / Best Man",
     image: "/crew/alon.jpg",
     highlight: "aqua",
-    reservation: "3325330",
-    room: "9399",
+    reservation: "1104418",
+    room: "7671",
   },
-  {
-    name: "Yaron Eylon",
-    role: "Groomsman",
-    image: "/crew/yaron.jpg",
-    reservation: "3326279",
-    room: "9397",
-  },
-  {
-    name: "Ari Nahum",
-    role: "Groomsman",
-    image: "/crew/ari.jpg",
-    reservation: "3317035",
-    room: "9393",
-  },
+  // Everyone else, ordered by room number
   {
     name: "Cade Zaris",
     role: "Groomsman",
     image: "/crew/cade.jpg",
     reservation: "3310626",
     room: "9385",
-  },
-  {
-    name: "Dean Kenny",
-    role: "Groomsman",
-    image: "/crew/dean.jpg",
-    imagePosition: "center 25%",
-    reservation: "3319946",
-    room: "9395",
-  },
-  {
-    name: "Jake Marcus",
-    role: "Groomsman",
-    image: "/crew/jake.jpg",
-    imagePosition: "center 20%",
-    reservation: "3310659",
-    room: "9387",
-  },
-  {
-    name: "Jett Cohen",
-    role: "Groomsman",
-    image: "/crew/jett.jpg",
-    reservation: "3310851",
-    room: "9389",
   },
   {
     name: "Justin Adler",
@@ -86,11 +53,12 @@ const crew: CrewMember[] = [
     room: "9385",
   },
   {
-    name: "Len Asari",
+    name: "Jake Marcus",
     role: "Groomsman",
-    image: "/crew/len.jpg",
-    reservation: "3316778",
-    room: "9391",
+    image: "/crew/jake.jpg",
+    imagePosition: "center 20%",
+    reservation: "3310659",
+    room: "9387",
   },
   {
     name: "Matt Petcove",
@@ -107,11 +75,61 @@ const crew: CrewMember[] = [
     room: "9389",
   },
   {
+    name: "Jett Cohen",
+    role: "Groomsman",
+    image: "/crew/jett.jpg",
+    reservation: "3310851",
+    room: "9389",
+  },
+  {
+    name: "Len Asari",
+    role: "Groomsman",
+    image: "/crew/len.jpg",
+    reservation: "3316778",
+    room: "9391",
+  },
+  {
+    name: "Justin Prechodko",
+    role: "Groomsman",
+    image: "/crew/justin-p.jpg",
+    reservation: "3316778",
+    room: "9391",
+  },
+  {
+    name: "Ari Nahum",
+    role: "Groomsman",
+    image: "/crew/ari.jpg",
+    reservation: "3317035",
+    room: "9393",
+  },
+  {
+    name: "Tyler Esposito",
+    role: "Groomsman",
+    image: "/crew/tyler.jpg",
+    reservation: "3317035",
+    room: "9393",
+  },
+  {
     name: "Samnit Gill",
     role: "Groomsman",
     image: "/crew/samnit.jpg",
     reservation: "3319946",
     room: "9395",
+  },
+  {
+    name: "Dean Kenny",
+    role: "Groomsman",
+    image: "/crew/dean.jpg",
+    imagePosition: "center 25%",
+    reservation: "3319946",
+    room: "9395",
+  },
+  {
+    name: "Isaac",
+    role: "Groomsman",
+    image: "/crew/isaac.jpg",
+    reservation: "3326279",
+    room: "9397",
   },
   {
     name: "Orel Alia",
@@ -122,18 +140,11 @@ const crew: CrewMember[] = [
     room: "9399",
   },
   {
-    name: "Tyler Esposito",
+    name: "Yaron Eylon",
     role: "Groomsman",
-    image: "/crew/tyler.jpg",
-    reservation: "3317035",
-    room: "9393",
-  },
-  {
-    name: "Justin Prechodko",
-    role: "Groomsman",
-    image: "/crew/justin-p.jpg",
-    reservation: "3316778",
-    room: "9391",
+    image: "/crew/yaron.jpg",
+    reservation: "3325330",
+    room: "9399",
   },
 ];
 
@@ -191,7 +202,7 @@ export default function CrewClient() {
             className="inline-block text-aqua text-sm font-semibold tracking-widest uppercase mb-4
               bg-aqua/10 px-4 py-1.5 rounded-full border border-aqua/20"
           >
-            16 Legends
+            17 Legends
           </motion.span>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl font-bold text-white glow-text mb-4">
             The Crew
@@ -213,6 +224,19 @@ export default function CrewClient() {
         <FishSchool className="absolute top-[70%] left-4 hidden lg:block" size={140} />
         <ShipWheelDecoration className="absolute bottom-24 right-12 hidden lg:block" size={110} />
         <div className="max-w-6xl mx-auto px-4 relative z-10">
+
+          {/* Group ID */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-10"
+          >
+            <span className="inline-block text-xs sm:text-sm font-semibold text-gold/80 uppercase tracking-widest
+              bg-gold/10 px-4 py-1.5 rounded-full border border-gold/25">
+              Group ID · {GROUP_ID}
+            </span>
+          </motion.div>
 
           {/* Groom — featured large */}
           <motion.div
